@@ -13,7 +13,8 @@ Description:
 
 import requests
 
-url = 'http://127.0.0.1:5000/error'
+
+url = 'https://127.0.0.1:5010/error'
 msg = {}
 
 if __name__ == '__main__':
@@ -22,4 +23,4 @@ if __name__ == '__main__':
 
         msg2send = input('what would you like to send? ')
         msg['msg'] = msg2send
-        reply = requests.post(url, json=msg)
+        reply = requests.post(url, json=msg, verify='certs/server.pem')

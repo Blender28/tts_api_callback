@@ -70,4 +70,9 @@ if __name__ == '__main__':
     speach_thread.setDaemon(True)
     speach_thread.start()
 
-    app.run(debug=False)
+    # TODO
+    # Fix ssl certs
+    # These are basic self sigend certs for temp purposes
+
+    context = ('certs/server.crt', 'certs/server.key')
+    app.run(debug=False, port=5010, ssl_context=context)
