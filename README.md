@@ -12,6 +12,7 @@ Required Libraries:
 - <code>pip install flask</code>
 - <code>pip install pyttsx3</code>
 - <code>pip install pyopenssl</code>
+- <code>pip install simpleaudio</code>
 
 How to run:
 
